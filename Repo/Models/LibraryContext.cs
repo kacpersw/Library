@@ -19,7 +19,6 @@ namespace Repo.Models
             return new LibraryContext();
         }
 
-        public DbSet<Author> Authors { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Borrow> Borrows { get; set; }
         public DbSet<Cart> Carts { get; set; }

@@ -115,8 +115,19 @@
     <Compile Include="Migrations\201710291742459_first-migration.Designer.cs">
       <DependentUpon>201710291742459_first-migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711021744423_Second-migration.cs" />
+    <Compile Include="Migrations\201711021744423_Second-migration.Designer.cs">
+      <DependentUpon>201711021744423_Second-migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711021757026_Third-migration.cs" />
+    <Compile Include="Migrations\201711021757026_Third-migration.Designer.cs">
+      <DependentUpon>201711021757026_Third-migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711021808212_add-category-to-book.cs" />
+    <Compile Include="Migrations\201711021808212_add-category-to-book.Designer.cs">
+      <DependentUpon>201711021808212_add-category-to-book.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Borrow.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -133,6 +144,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201710291742459_first-migration.resx">
       <DependentUpon>201710291742459_first-migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711021744423_Second-migration.resx">
+      <DependentUpon>201711021744423_Second-migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711021757026_Third-migration.resx">
+      <DependentUpon>201711021757026_Third-migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711021808212_add-category-to-book.resx">
+      <DependentUpon>201711021808212_add-category-to-book.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -10,8 +10,6 @@ namespace Repo.Models
     {
         public int BorrowId { get; set; }
 
-        public int BookId { get; set; }
-
         [Display(Name = "Data wypożyczenia")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{:0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
@@ -26,5 +24,7 @@ namespace Repo.Models
         public string State { get; set; }
 
         public virtual User User { get; set; }
+
+        public virtual Book Book { get; set; }
     }
 }

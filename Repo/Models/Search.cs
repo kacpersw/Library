@@ -10,13 +10,13 @@ namespace Repo.Models
     {
         public int SearchId { get; set; }
 
-        public int BookId { get; set; }
-
         [Display(Name = "Data wyszukiwania")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString ="{:0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime SearchDate { get; set; }
 
-        //todo user
+        public virtual User User { get; set; }
+
+        public virtual Book Book { get; set; }
     }
 }

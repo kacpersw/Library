@@ -14,8 +14,7 @@ namespace Repo.Models
         public string Status { get; set; }
 
         public virtual User User { get; set; }
-        //todo books
 
-
+        public virtual ICollection<Book> Book { get; set; }
     }
 }

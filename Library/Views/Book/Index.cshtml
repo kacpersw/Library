@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="text-center">
+    <h3>Wyszukaj książkę</h3>
+    @using (Html.BeginForm("", "", FormMethod.Post, new { encype = "multipart/form-data", runat = "server" }))
+    {
+        <label for="book">Tytuł, autor, ISBN, tag...</label>
+            <input type="text" name="book" class="inputs-size-bigger" />
+            <input type="submit" class="btn btn-success" style="margin: 10px;" value="Szukaj" />
+    }
+</div>

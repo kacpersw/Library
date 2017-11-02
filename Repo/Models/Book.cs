@@ -17,12 +17,17 @@ namespace Repo.Models
         [Display(Name = "Tytuł")]
         public string Title { get; set; }
 
+        [Display(Name ="Kategoria")]
+        public string Category { get; set; }
+
         [Display(Name = "Wypożyczona")]
         public bool Loaned { get; set; }
 
-        //todo author 
-        // todo files 
-        // todo tags
+        [Display(Name = "Autor")]
+        public string Author { get; set; }
 
+        public virtual ICollection<File> File { get; set; }
+
+        public virtual ICollection<Tag> Tag { get; set; }
     }
 }

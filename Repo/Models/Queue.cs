@@ -8,6 +8,9 @@ namespace Repo.Models
     public class Queue
     {
         public int QueueId { get; set; }
-        // todo 
+        
+        public virtual Book Book { get; set; }
+        
+        public virtual IEnumerable<User> User { get; set; }
     }
 }
