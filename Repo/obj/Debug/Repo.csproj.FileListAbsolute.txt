@@ -77,7 +77,7 @@ C:\Users\Ibra18plus\Desktop\Library\Library\Repo\obj\Debug\Repo.dll
 C:\Users\Ibra18plus\Desktop\Library\Library\Repo\obj\Debug\Repo.pdb
 C:\Users\Ibra18plus\Desktop\Library\Library\Repo\obj\Debug\Repo.Migrations.firstmigration.resources
 C:\Users\Ibra18plus\Desktop\Library\Library\Repo\obj\Debug\Repo.csproj.GenerateResource.Cache
-C:\Users\Ibra18plus\Desktop\Library\Library\Repo\obj\Debug\Repo.csprojResolveAssemblyReference.cache
 C:\Users\Ibra18plus\Desktop\Library\Library\Repo\obj\Debug\Repo.Migrations.Secondmigration.resources
 C:\Users\Ibra18plus\Desktop\Library\Library\Repo\obj\Debug\Repo.Migrations.Thirdmigration.resources
 C:\Users\Ibra18plus\Desktop\Library\Library\Repo\obj\Debug\Repo.Migrations.addcategorytobook.resources
+C:\Users\Ibra18plus\Desktop\Library\Library\Repo\obj\Debug\Repo.csprojResolveAssemblyReference.cache

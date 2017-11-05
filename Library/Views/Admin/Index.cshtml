@@ -1,26 +1,24 @@
 ﻿@model Repo.Models.Book
+
 @{
     ViewBag.Title = "Dodaj książkę";
 }
+
 <div class="text-center">
     <h3>Dodaj książkę</h3>
 </div>
-
 
 @using (Html.BeginForm("", "", FormMethod.Post, new { encype = "multipart/form-data", runat = "server", @class = "form-inline text-center" }))
 {
     <div style="text-align: center;">
         <label for="title">Tytuł</label><br />
-        <input type="text" name="title" class="inputs-size-bigger"/>
-        <br/>
+        <input type="text" name="title" class="inputs-size-bigger"/><br/>
 
         <label for="author">Autor</label><br />
-        <input type="text" name="author" class="inputs-size-bigger"/>
-        <br/>
+        <input type="text" name="author" class="inputs-size-bigger"/><br/>
 
         <label for="ISBN">ISBN</label><br />
-        <input type="text" name="ISBN" class="inputs-size-bigger"/>
-        <br/>
+        <input type="text" name="ISBN" class="inputs-size-bigger"/><br/>
 
         <label for="tags">Tagi</label><br />
         <input type="text" name="tags" class="inputs-size-bigger" />
@@ -29,8 +27,7 @@
         <label class="fileContainer btn btn-danger">
             Kliknij, aby dodać plik
             <input type="file" name="file"  runat="server">
-        </label>
-        <br/><br/>
+        </label><br/><br/>
 
         <label>Kategoria</label><br />
         @Html.DropDownListFor(a => a.Category, new[]
@@ -41,13 +38,10 @@
                  new SelectListItem(){Text = "Dramat"},
                  new SelectListItem(){Text = "Naukowa"},
                  new SelectListItem(){Text = "Poezja"},
-             })
+        })
         <br/><br/>
         <input type="submit" class="btn btn-success" style="margin: 10px;" value="Dodaj książkę"/>
-
     </div>
-
-  
 }
 
 <div class="text-center">
@@ -64,9 +58,5 @@
 
             <br />
             <input type="submit" class="btn btn-success" style="margin: 10px;" value="Dodaj wiadomość" />
-
-
-
-
     }
 </div>
