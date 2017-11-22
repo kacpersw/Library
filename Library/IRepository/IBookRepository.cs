@@ -1,16 +1,20 @@
-﻿using Repo.Models;
+﻿using Library.ViewModels;
+using Repo.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.IServices
+namespace Library.IRepository
 {
-    public interface IBookService
+    public interface IBookRepository
     {
         bool AddBookToDB(Book book);
         IEnumerable<Book> GetAllBooksFromDB();
         Book GetBookById(int id);
+
+        BookViewModel CreateBookViewModel(Book book);
+        List<BookViewModel> GetAllBooksViewModel();
     }
 }

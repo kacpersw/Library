@@ -1,4 +1,4 @@
-﻿using Library.IServices;
+﻿using Library.IRepository;
 using Library.ViewModels;
 using Repo.Models;
 using System;
@@ -6,17 +6,59 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Library.Services
+namespace Library.Repository
 {
-    public class BookViewModelService : IBookViewModelService
+    public class BookRepository : IBookRepository
     {
         private readonly LibraryContext _context;
 
-        public BookViewModelService(LibraryContext context)
+        public BookRepository(LibraryContext context)
         {
             _context = context;
         }
 
+        public bool AddBookToDB(Book book)
+        {
+            try
+            {
+                _context.Books.Add(book);
+                _context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public IEnumerable<Book> GetAllBooksFromDB()
+        {
+            try
+            {
+                return _context.Books
+                    .ToList();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public Book GetBookById(int id)
+        {
+            try
+            {
+                return _context.Books
+                    .Where(b => b.BookId == id)
+                    .FirstOrDefault();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        //Methods to view model
         public BookViewModel CreateBookViewModel(Book book)
         {
             if (book == null)
@@ -48,6 +90,5 @@ namespace Library.Services
 
             return bookViewModel;
         }
-
     }
 }

@@ -1,4 +1,4 @@
-﻿using Library.IServices;
+﻿using Library.IRepository;
 using Repo.Models;
 using System;
 using System.Collections.Generic;
@@ -10,19 +10,17 @@ namespace Library.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IBookService _bookService;
-        private readonly IBookViewModelService _bookViewModelService;
+        private readonly IBookRepository _bookRepository;
 
-        public HomeController(IBookService bookService, IBookViewModelService bookViewModelService)
+        public HomeController(IBookRepository bookRepository)
         {
-            _bookService = bookService;
-            _bookViewModelService = bookViewModelService;
+            _bookRepository = bookRepository;
         }
 
         public ActionResult Index()
         {
             
-            return View(_bookViewModelService.GetAllBooksViewModel());
+            return View(_bookRepository.GetAllBooksViewModel());
         }
 
         public ActionResult About()

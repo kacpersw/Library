@@ -14,8 +14,8 @@ namespace Library.App_Start
     using Ninject.Web.Common.WebHost;
     using Repo.Models;
     using Ninject.Web.WebApi;
-    using Library.IServices;
-    using Library.Services;
+    using Library.IRepository;
+    using Library.Repository;
 
     public static class NinjectWebCommon
     {
@@ -61,9 +61,8 @@ namespace Library.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<LibraryContext>().ToSelf().InRequestScope();
-            kernel.Bind<IBookService>().To<BookService>().InRequestScope();
-            kernel.Bind<IUserService>().To<UserService>().InRequestScope();
-            kernel.Bind<IBookViewModelService>().To<BookViewModelService>().InRequestScope();
+            kernel.Bind<IBookRepository>().To<BookRepository>().InRequestScope();
+
         }
     }
 }

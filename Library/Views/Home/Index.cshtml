@@ -4,10 +4,20 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="text-center">
+    <h3>Wyszukaj książkę</h3>
+    @using (Html.BeginForm("", "", FormMethod.Post, new { encype = "multipart/form-data", runat = "server" }))
+    {
+        <label for="book">Tytuł, autor, ISBN, tag...</label>
+        <input type="text" name="book" class="inputs-size-bigger" />
+
+        <input type="submit" class="btn btn-success" style="margin: 10px;" value="@Library.Resources.HomeTexts.Search" />
+    }
+</div>
+
+<div class="text-center">
+    <h3>Wiadomości administratora</h3>
+
 </div>
 
 @for (int i = 0; i < Model.Count; i++)
@@ -15,4 +25,6 @@
     <p>
         @Model[i].Title
     </p>
+
+
 }

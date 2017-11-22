@@ -12,6 +12,7 @@ namespace Repo.Models
         public LibraryContext()
             : base("DefaultConnection")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public static LibraryContext Create()
