@@ -1,4 +1,4 @@
-﻿@model IList<Library.ViewModels.BookViewModel>
+﻿@model Library.ViewModels.HomePageViewModel
 
 @{
     ViewBag.Title = "Home Page";
@@ -17,14 +17,38 @@
 
 <div class="text-center">
     <h3>@Library.Resources.HomeTexts.News</h3>
-
+    @foreach (var news in Model.NewsList)
+    {
+        <h4>@news.Title</h4>
+        <br/>
+        <h5>@news.Username</h5>
+        <span>@news.Content</span>
+        <hr/>
+    }
 </div>
 
-@for (int i = 0; i < Model.Count; i++)
-{
-    <p>
-        @Model[i].Title
-    </p>
+<hr/>
 
+<div class="text-center">
+    <h3>@Library.Resources.HomeTexts.BooksList</h3>
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                <th>@Library.Resources.HomeTexts.Title</th>
+                <th>@Library.Resources.HomeTexts.Author</th>
+                <th>@Library.Resources.HomeTexts.Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model.BooksList)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.Category</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
-}

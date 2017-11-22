@@ -8,7 +8,6 @@ namespace Repo.Models
 {
     public class Book
     {
-
         public int BookId { get; set; }
 
         [Display(Name = "Numer ISBN")]

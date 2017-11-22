@@ -238,7 +238,6 @@ C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\bin\System.W
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\bin\System.Web.WebPages.xml
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\bin\System.Web.WebPages.Razor.xml
-C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Repo.csprojResolveAssemblyReference.cache
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Repo.Migrations.firstmigration.resources
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Repo.Migrations.Secondmigration.resources
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Repo.Migrations.Thirdmigration.resources
@@ -247,3 +246,5 @@ C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Re
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Repo.csproj.CoreCompileInputs.cache
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Repo.dll
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Repo.pdb
+C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Repo.Migrations.message.resources
+C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Repo\obj\Debug\Repo.Migrations.addedmessagetitle.resources

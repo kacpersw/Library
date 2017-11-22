@@ -117,11 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
   <data name="Book" xml:space="preserve">
     <value>Book</value>
   </data>
   <data name="BookSearchTitle" xml:space="preserve">
     <value>Search book</value>
+  </data>
+  <data name="BooksList" xml:space="preserve">
+    <value>List of the most popular books</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
@@ -136,6 +145,9 @@
     <value>Search</value>
   </data>
   <data name="SearchElements" xml:space="preserve">
-    <value>Title, author, cathegory, ISBN, tags...</value>
+    <value>Title, author, category, ISBN, tags...</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
   </data>
 </root>

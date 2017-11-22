@@ -61,6 +61,15 @@ namespace Library.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Author.
+        /// </summary>
+        public static string Author {
+            get {
+                return ResourceManager.GetString("Author", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Book.
         /// </summary>
         public static string Book {
@@ -75,6 +84,24 @@ namespace Library.Resources {
         public static string BookSearchTitle {
             get {
                 return ResourceManager.GetString("BookSearchTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of the most popular books.
+        /// </summary>
+        public static string BooksList {
+            get {
+                return ResourceManager.GetString("BooksList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category.
+        /// </summary>
+        public static string Category {
+            get {
+                return ResourceManager.GetString("Category", resourceCulture);
             }
         }
         
@@ -115,11 +142,20 @@ namespace Library.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Title, author, cathegory, ISBN, tags....
+        ///   Looks up a localized string similar to Title, author, category, ISBN, tags....
         /// </summary>
         public static string SearchElements {
             get {
                 return ResourceManager.GetString("SearchElements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }
