@@ -120,10 +120,22 @@
   <data name="Book" xml:space="preserve">
     <value>Book</value>
   </data>
+  <data name="BookSearchTitle" xml:space="preserve">
+    <value>Search book</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="News" xml:space="preserve">
+    <value>News</value>
+  </data>
   <data name="Search" xml:space="preserve">
     <value>Search</value>
+  </data>
+  <data name="SearchElements" xml:space="preserve">
+    <value>Title, author, cathegory, ISBN, tags...</value>
   </data>
 </root>

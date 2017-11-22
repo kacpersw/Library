@@ -16,6 +16,8 @@ namespace Library.App_Start
     using Ninject.Web.WebApi;
     using Library.IRepository;
     using Library.Repository;
+    using Library.Services;
+    using Library.IServices;
 
     public static class NinjectWebCommon
     {
@@ -62,7 +64,7 @@ namespace Library.App_Start
         {
             kernel.Bind<LibraryContext>().ToSelf().InRequestScope();
             kernel.Bind<IBookRepository>().To<BookRepository>().InRequestScope();
-
+            kernel.Bind<ILanguageService>().To<LanguageService>().InRequestScope();
         }
     }
 }

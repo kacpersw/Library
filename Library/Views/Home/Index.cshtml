@@ -5,10 +5,10 @@
 }
 
 <div class="text-center">
-    <h3>Wyszukaj książkę</h3>
+    <h3>@Library.Resources.HomeTexts.BookSearchTitle</h3>
     @using (Html.BeginForm("", "", FormMethod.Post, new { encype = "multipart/form-data", runat = "server" }))
     {
-        <label for="book">Tytuł, autor, ISBN, tag...</label>
+        <label for="book">@Library.Resources.HomeTexts.SearchElements</label>
         <input type="text" name="book" class="inputs-size-bigger" />
 
         <input type="submit" class="btn btn-success" style="margin: 10px;" value="@Library.Resources.HomeTexts.Search" />
@@ -16,7 +16,7 @@
 </div>
 
 <div class="text-center">
-    <h3>Wiadomości administratora</h3>
+    <h3>@Library.Resources.HomeTexts.News</h3>
 
 </div>
 

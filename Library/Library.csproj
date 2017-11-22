@@ -233,6 +233,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="IRepository\IBookRepository.cs" />
+    <Compile Include="IServices\ILanguageService.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BookRepository.cs" />
@@ -246,6 +247,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HomeTexts.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\LanguageService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\BookViewModel.cs" />
   </ItemGroup>
@@ -301,8 +303,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -330,7 +330,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Cart\" />
-    <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

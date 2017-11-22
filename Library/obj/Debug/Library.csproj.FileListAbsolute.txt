@@ -427,3 +427,8 @@ C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Library\obj\Debug
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Library\obj\Debug\Library.dll
 C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Library\obj\Debug\Library.pdb
+C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Library\bin\pl\Library.resources.dll
+C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Library\obj\Debug\Library.Resources.HomeTexts.resources
+C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Library\obj\Debug\Library.Resources.HomeTexts.pl.resources
+C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\Kacper\OneDrive\Semestr V\ASP.NET MVC\Projekt\Library\Library\obj\Debug\pl\Library.resources.dll
